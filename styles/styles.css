@@ -1,0 +1,37 @@
+#basic-text1 {
+  background-color: #ce93d8;
+  cursor: pointer;
+}
+
+#upload {
+  background-color: #ce93d8;
+}
+
+#stepOne {
+  padding: 40px;
+  background-color: #bdbdbd;
+}
+
+iframe { 
+  height: 400px;  
+  border:0; 
+}
+
+#output {  
+  height: 400px;      
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#output .card {
+  overflow-y: scroll;
+}
+
+.container {
+  padding: 20px;
+}
+
+#drop-zone {
+  border: 2px dashed lightblue;  
+  text-align: center;
+}
