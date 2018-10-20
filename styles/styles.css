@@ -5,6 +5,7 @@
 
 #upload {
   background-color: #ce93d8;
+  border: #ce93d8;
 }
 
 #stepOne {
@@ -29,9 +30,4 @@ iframe {
 
 .container {
   padding: 20px;
-}
-
-#drop-zone {
-  border: 2px dashed lightblue;  
-  text-align: center;
 }

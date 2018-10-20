@@ -1,5 +1,18 @@
 $(function(){
 
+  var input = document.getElementById('toLink');
+  input.addEventListener("keyup", function(event){
+    event.preventDefault();
+    event.stopPropagation();
+    if(event.keyCode == 13 ){
+      loadVideo($(this).closest('#stepOne').find('#toLink').val());
+    }
+  })
+  $('#Link').on('click', function(){
+    loadVideo($(this).closest('#stepOne').find('#toLink').val());   
+
+
+
   $('#drop-zone').on('submit', function(event){
     event.preventDefault();
     event.stopPropagation();
@@ -29,12 +42,20 @@ $(function(){
   //   });  
 });
 
-
-
-
-
-
-
+function loadVideo(link)
+{
+  alert(link);
+  var indexOfEquals = 0;
+  for(indexOfEquals = 0; indexOfEquals < link.length; indexOfEquals++){
+    if(link[indexOfEquals] == '='){
+      indexOfEquals += 1;
+      break;
+    }
+  }
+  var videoID = link.substr(indexOfEquals);
+  alert(videoID);
+  document.getElementById("myIframe").src="https://youtube.com/embed/"+videoID;
+}
 
 // $(function() {
   
@@ -53,18 +74,3 @@ $(function(){
   
 
 // });
-
-// function loadVideo(link)
-// {
-//   alert(link);
-//   var indexOfEquals = 0;
-//   for(indexOfEquals = 0; indexOfEquals < link.length; indexOfEquals++){
-//     if(link[indexOfEquals] == '='){
-//       indexOfEquals += 1;
-//       break;
-//     }
-//   }
-//   var videoID = link.substr(indexOfEquals);
-//   alert(videoID);
-//   document.getElementById("myIframe").src="https://youtube.com/embed/"+videoID;
-// }
