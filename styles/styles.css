@@ -1,4 +1,4 @@
-#basic-text1 {
+.Link {
   background-color: #ce93d8;
   cursor: pointer;
 }
@@ -13,18 +13,18 @@
   background-color: #bdbdbd;
 }
 
-iframe { 
-  height: 400px;  
-  border:0; 
+iframe {
+  border: 0;
+  height: 447px;  
 }
 
-#output {  
-  height: 400px;      
+#output {        
   padding-top: 10px;
   padding-left: 10px;
 }
 
 #output .card {
+  height: 400px;
   overflow-y: scroll;
 }
 

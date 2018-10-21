@@ -23,9 +23,9 @@
         <div class="row" id="stepOne">
           <div class="col-10">
               <div class="input-group md-form form-sm form-1 pl-0">
-                  <input class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+                  <input id="toLink" class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
                   <div class="input-group-prepend">
-                    <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fa fa-search text-white"
+                    <span class="input-group-text purple lighten-3 Link" id="basic-text1"><i class="fa fa-search text-white"
                         aria-hidden="true"></i></span>
                   </div>                  
                 </div>            
@@ -37,46 +37,32 @@
           </div>
         </div> 
         <hr>
-        <div class="row" id="stepTwo">
+        <div class="row" id="stepTwo" >        
           <div class="col-7">
-            <div class="col-12">
-              <iframe src="https://www.youtube.com/embed/LYKRkHSLE2E"></iframe>
+            <div class="row">         
+              <iframe id="myIframe" class="col-12" src="https://www.youtube.com/embed/LYKRkHSLE2E"></iframe>            
             </div>
           </div>
 
-
-
-
-        </div>
-        
-
-
-
-        <div class="row" id="stepTwo" >  
-          <div class="col-7">           
-             <iframe class="col-12" src="https://www.youtube.com/embed/LYKRkHSLE2E">            
-             </iframe>                           
           <div class="col-5">
             <div class="row">
-                <div class="col-12">
-                    <div class="input-group md-form form-sm form-1 pl-0">
-                        <input id="Search" class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text purple lighten-3" id="basic-text1"><i class="fa fa-search text-white"
-                              aria-hidden="true"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-
-            <div class="row" id="output">              
-              <div class="col-12 card">
-                <div id="content"></div>
+              <div class="col-12">
+                  <div class="input-group md-form form-sm form-1 pl-0">
+                      <input id="Search" class="form-control my-0 py-1" type="text" placeholder="Search" aria-label="Search">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text purple lighten-3 Link" id="basic-text1"><i class="fa fa-search text-white"
+                            aria-hidden="true"></i></span>
+                      </div>
+                  </div>
               </div>
             </div>
 
+            <div class="row" id="output">              
+                <div class="col-12 card">
+                  <div id="content"></div>
+                </div>
+              </div>
           </div>
-        </div>   
-      </div>                    
+        </div>                
   </body>
 </html>

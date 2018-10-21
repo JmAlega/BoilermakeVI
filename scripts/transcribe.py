@@ -1,4 +1,3 @@
-#
 import io
 import sys
 import os
@@ -83,3 +82,6 @@ for i in range(len(fulltext.split('.'))):
 
 for i in range(len(sentence_starts)-1):
     print(sentence_starts[i],fulltext.split('.')[i],'\n')
+
+print(sentence_starts)
+sys.stdout.flush()
