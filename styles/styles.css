@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 .Link {
   background-color: #ce93d8;
   cursor: pointer;
@@ -8,14 +13,14 @@
   border: #ce93d8;
 }
 
-#stepOne {
+#stepOne {  
   padding: 40px;
   background-color: #bdbdbd;
 }
 
 iframe {
   border: 0;
-  height: 447px;  
+  height: 420px;  
 }
 
 #output {        
@@ -24,7 +29,7 @@ iframe {
 }
 
 #output .card {
-  height: 400px;
+  height: 373px;
   overflow-y: scroll;
 }
 

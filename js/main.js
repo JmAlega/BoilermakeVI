@@ -1,25 +1,21 @@
-// import {PythonShell} from 'python-shell';
 $(function(){
   var input = document.getElementById('toLink');
   input.addEventListener("keyup", function(event){
     event.preventDefault();
     event.stopPropagation();
-    if(event.keyCode == 13 ){
-      alert("??");
+    if(event.keyCode == 13 ){      
       loadVideo($(this).closest('#stepOne').find('#toLink').val());
     }
-  })
-  $('#Link').on('click', function(){
+  });
+  $('.Link').on('click', function(){    
     loadVideo($(this).closest('#stepOne').find('#toLink').val()); 
-  })  
+  });  
 
   $('input[name=dropbox]').on('change', function(event){
     event.preventDefault();
     event.stopPropagation();    
-    var name = $(event.target).val();  
-    //alert(name);
-    name = getName(name);
-    //alert(name);
+    var name = $(event.target).val();      
+    name = getName(name);    
     var url = "http://localhost:8080/scripts/transcribe.py";
   
     $.ajax({
@@ -37,8 +33,8 @@ $(function(){
 });
 
 function loadVideo(link)
-{
-  alert(link);
+{  
+  alert("at 37");
   var indexOfEquals = 0;
   for(indexOfEquals = 0; indexOfEquals < link.length; indexOfEquals++){
     if(link[indexOfEquals] == '='){
@@ -46,8 +42,7 @@ function loadVideo(link)
       break;
     }
   }
-  var videoID = link.substr(indexOfEquals);
-  alert(videoID);
+  var videoID = link.substr(indexOfEquals);  
   document.getElementById("myIframe").src="https://youtube.com/embed/"+videoID;
 }
 
