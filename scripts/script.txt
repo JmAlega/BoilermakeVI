@@ -1,0 +1,16 @@
+File:  SchoolOfAI.wav
+0 Hello world in storage, and I'm excited to announce that school of AI is launching a research lab thanks to Google Cloud
+
+7  We're going to offer 10 Wizards 1000 US dollars in Cloud credits to pursue some exciting research directions
+
+14  They'll be our fall 2018 fellows
+
+16  Each of them will receive personalized mentorship from one of our experience advisors to help them along their Journey
+
+24  We like to grow the amateur research community
+
+27  That means Wizards from around the world who aren't necessarily a part of Academia or industry
+
+34  We believe that by enabling them to do research with a complete pipeline of resources from funding to mentorship to helping them submit their work to relevant Outlets the entire AI Community will benefit
+
+49  So here's the plan we've got some research directions that we think are particularly exciting including

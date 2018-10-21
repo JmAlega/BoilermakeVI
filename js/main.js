@@ -16,7 +16,7 @@ $(function(){
     event.stopPropagation();    
     var name = $(event.target).val();      
     name = getName(name);    
-    var url = "http://localhost:8080/scripts/transcribe.py";
+    var url = "http://localhost:8080/scripts/script.txt";
   
     $.ajax({
       type: "GET",
@@ -33,8 +33,7 @@ $(function(){
 });
 
 function loadVideo(link)
-{  
-  alert("at 37");
+{    
   var indexOfEquals = 0;
   for(indexOfEquals = 0; indexOfEquals < link.length; indexOfEquals++){
     if(link[indexOfEquals] == '='){
